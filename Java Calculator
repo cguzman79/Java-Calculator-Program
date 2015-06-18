@@ -1,0 +1,61 @@
+	/*Programmer:  Christopher Guzman
+   Program Purpose:  <Calculator program>
+   Project:  IT106 Lab 5 Exercise 1
+   Date:  November 29, 2012*/
+
+import java.util.Scanner;
+class calculator1
+{
+   
+   public static void main(String[] args)
+   {
+   int choice, first, second, answer;
+   Scanner input=new Scanner(System.in);
+   
+   System.out.println("  Please choose an operation:");
+   System.out.println("1. +");
+   System.out.println("2. -");
+   System.out.println("3. *");
+   System.out.println("4. /");
+   System.out.println("");
+   System.out.print("Your Choice:  ");
+   
+   choice=input.nextInt();
+   System.out.println("You entered:"+choice);
+   
+   System.out.println("");
+   System.out.print("Enter the first number: ");
+   first=input.nextInt();
+   
+   System.out.println("");
+   System.out.print("Enter the second number: ");
+   second=input.nextInt();
+   
+   System.out.println("");
+   System.out.println("First: "+first+"  Second: "+second);
+   
+   if(choice==1)
+   {
+   answer=first+second;
+   System.out.println(first+"+"+second+"="+answer);
+  }
+   else if(choice==2)
+   {
+   answer=first-second;
+   System.out.println(first+"-"+second+"="+answer);
+   }
+   else if(choice==3)
+   {
+      answer = first*second;
+      System.out.println(first+"*"+second+"="+answer);
+   }
+   else if(choice==4)
+   {
+      answer = first/second;
+      System.out.println(first+"/"+second+"="+answer);
+   }
+   else
+      System.out.println("!!!Invalid Operation!!!");
+   
+   }
+}
